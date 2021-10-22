@@ -1,0 +1,24 @@
+{
+   "type": "postgres",
+   "host": "fanny.db.elephantsql.com",
+   "port": 5432,
+   "username": "icukadbg",
+   "password": "QrD-nPwnJAmWw0xCo5hKDCHZvYqKaHpN",
+   "database": "icukadbg",
+   "synchronize": true,
+   "logging": false,
+   "entities": [
+      "src/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
